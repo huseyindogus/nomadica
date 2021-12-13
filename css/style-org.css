@@ -379,13 +379,14 @@ nav .links a {
   /* outline: 10px solid hotpink; */
   /* turn above on to see the edge of nomadycanspanels */
 }
-.panel {
+.nomadycanspanel {
   /* min height incase content is higher than window height */
   min-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: sans-serif;
+  background-color: #ab67c2;
   /* outline: 10px solid hotpink; */
   /* turn above on to see the edge of panels */
 }
