@@ -199,6 +199,15 @@ nav .links a {
 	top:-50px;
 	z-index:50;
 }
+#mid
+{
+	display:block;	
+	position:absolute;
+	width:20%;
+	left:35%;
+	top:0;
+	z-index:49;
+}
 #vline
 {
 	display:block;	
@@ -232,6 +241,13 @@ nav .links a {
 	right:25%;
 	top:0;
 }
+#mid
+{
+	width:80%;
+	right:50%;
+	top:0;
+}
+
 .home-text-box{
 	color: #fff;
 	width: 100%;
@@ -268,7 +284,55 @@ nav .links a {
 	color: #fff;
 	font-size: 14px;
 	text-align:inherit;
+	height: 50vh;
+    overflow: hidden;
+    overflow-y: scroll;
+	scroll-behavior: smooth;
 }
+
+
+
+
+
+
+/* width */
+.onursecki-text::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+/*
+.nomadyca-textbox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+*/
+/* Track */
+
+ 
+/* Handle */
+.onursecki-text::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 3px;
+ 
+}
+
+/* Handle on hover */
+.onursecki-text::-webkit-scrollbar-thumb:hover {
+  background: #2d76b2; 
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
 	.onursecki-text-label{
 	left: 5%;
