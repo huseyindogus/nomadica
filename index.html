@@ -42,20 +42,20 @@
 
     </head>
     <body>   
-<nav>
+<nav id="menuicon">
 <input id="nav-toggle" type="checkbox">
 	<ul class="links">
-		<li><a href="#home">HOME</a></li>
+		<li><a id="menuhome" href="#home">HOME</a></li>
 		<li class="seperator">•</li>
-		<li><a href="#onursecki">ONUR SEÇKİ</a></li>
+		<li id="menuonursecki"><a  href="#onursecki">ONUR SEÇKİ</a></li>
 		<li class="seperator">•</li>
-		<li><a href="#nomadyca">NOMADYCA</a></li>
+		<li><a id="menunomadyca" href="#nomadyca">NOMADYCA</a></li>
 		<li class="seperator">•</li>
-		<li><a href="#highland">HIGHLAND</a></li>
+		<li><a id="menuhighland" href="#highland">HIGHLAND</a></li>
 		<li class="seperator">•</li>
-		<li><a href="#nomadycans">NOMADYCANS</a></li>
+		<li><a id="menunomadycans" href="#nomadycans">NOMADYCANS</a></li>
 		<li class="seperator">•</li>
-		<li><a href="#footer"><span class="contact">?</span></a></li>
+		<li><a id="menufooter" href="#footer"><span class="contact">?</span></a></li>
 	</ul>
 	<label for="nav-toggle" class="icon-burger">
 		<div class="line line1"></div>
@@ -236,9 +236,7 @@
 		</div>
 </div>			
 </div>		
-        <!-- start scroll to top -->
-        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
-        <!-- end scroll to top  -->
+
         <!-- javascript libraries -->
         <script type="text/javascript" src="js/jquery.js"></script>
 
@@ -420,6 +418,21 @@ $( "#onursecki-btn" ).click(function() {
     }
     }
 </script>
+<script type = "text/javascript">
+var checkbox = document.querySelector( '#nav-toggle' );
+var icon = document.querySelector( '#menuicon i' );
+var listener = function( e ) {
+  if( e.target != checkbox && e.target != icon ) {
+    checkbox.checked = false;
+    document.removeEventListener( 'click', listener );
+  }
+};
 
+checkbox.addEventListener( 'click', function(){
+  if( this.checked ) {
+    document.addEventListener( 'click', listener );
+  } 
+});
+</script>
     </body>
 </html>
