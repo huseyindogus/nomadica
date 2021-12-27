@@ -47,9 +47,9 @@
 	<ul class="links">
 		<li><a id="menuhome" href="#home">HOME</a></li>
 		<li class="seperator">•</li>
-		<li id="menuonursecki"><a  href="#onursecki">ONUR SEÇKİ</a></li>
-		<li class="seperator">•</li>
 		<li><a id="menunomadyca" href="#nomadyca">NOMADYCA</a></li>
+		<li class="seperator">•</li>
+		<li id="menuonursecki"><a  href="#onursecki">ONUR SEÇKİ</a></li>
 		<li class="seperator">•</li>
 		<li><a id="menuhighland" href="#highland">HIGHLAND</a></li>
 		<li class="seperator">•</li>
@@ -65,6 +65,72 @@
 </nav>
 
 <div id="home">
+
+<!--
+<div class="nomadycaplayer">
+<audio id="myAudio" ontimeupdate="onTimeUpdate()">
+
+  <source id="source-audio" src="" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="player-ctn">
+  <div class="infos-ctn">
+    <div class="timer">00:00</div>
+    <div class="title"></div>
+    <div class="duration">00:00</div>
+  </div>
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+  <div class="btn-ctn">
+     <div class="btn-action first-btn" onclick="previous()">
+        <div id="btn-faws-back">
+          <i class='fas fa-step-backward'></i>
+        </div>
+     </div>
+     <div class="btn-action" onclick="rewind()">
+        <div id="btn-faws-rewind">
+          <i class='fas fa-backward'></i>
+        </div>
+     </div>
+     <div class="btn-action" onclick="toggleAudio()">
+        <div id="btn-faws-play-pause">
+          <i class='fas fa-play' id="icon-play"></i>
+          <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+        </div>
+     </div>
+     <div class="btn-play" onclick="forward()">
+        <div id="btn-faws-forward">
+          <i class='fas fa-forward'></i>
+        </div>
+     </div>
+     <div class="btn-action" onclick="next()">
+        <div id="btn-faws-next">
+          <i class='fas fa-step-forward'></i>
+        </div>
+     </div>
+     <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+        <div id="btn-faws-volume">
+          <i id="icon-vol-up" class='fas fa-volume-up'></i>
+          <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
+        </div>
+     </div>
+  </div>
+  <div class="playlist-ctn"></div>
+</div>
+<script src=app.js></script>
+ </div>
+ -->
+
+
+
+
+
+
+
+
+
 <div class="section" id="section1">
 
         <!-- start page title section -->
@@ -72,7 +138,9 @@
         <!-- end page title section -->
 
 		<div class="back">	
+		<img src="media/logo.png" class="logo img-responsive" />
 		</div>
+		
 		<img id="front" class="box" src="media/mid-purple.png" class="img-responsive" />
 		<img id="mid" class="box" src="media/mid-blue.png" class="img-responsive" />
 		<img id="vline" class="box" src="media/right-red.png" class="img-responsive" />
@@ -91,41 +159,7 @@
 				who might save the world. </br>
 				</p>
 		</div>
-</div>		
-<div class="section" id="section1">
-		
-		
-		
-	
-		<div id="onursecki" class="onursecki clearfix">
-		<div class="onursecki-text-label">
-			<div id="onursecki-text" class="onursecki-text">
-				<p><span class="p-header">ONUR SEÇKİ</span><span class="p-c1"> is an independent music composer who grew up in the eastern lands and moulded his spirit with western influences</span>. 
-				Now as an experienced percussionist, after ending his career in chemical engineering, his musical creations are inspired by his personal journey. 
-				<span class="p-c2">In the manner of a nomad whose walk is guided by the unknown</span>, 
-				he seeks to extract himself from an overly analytical schema in order to tint his productions with a more spiritual meaning. 
-				<span class="p-c3">His musical journey began with a small flick on the skin of the Darbuka</span>, 
-				this oriental percussion instrument recognizable for its traditional sound. 
-				Thanks to his academic training in sound engineering and music production alongside his experience on stage as a percussionist, 
-				the artist has developed several strings to his bow over the years. 
-				His compositions are rich in this diversity and combine ethnic inspirations and electronic music with technique and originality.</p>
-
-			</div>
-			<div id="onursecki-text" class="onursecki-text" style="display:none;">
-				<p>
-					<span class="p-header">Nomadycan Manifesto</span>
-						The terms "Orient" and “Occident" are commonly used to describe two worlds, one in the East and the other in the West. However, these terms cover much more than geographical disparities, they imply differences in culture, way of thinking and development between people. They skew our view of the world and the people who make it up by giving us a fixed reading grid, which obscures the effects of interconnection, of progress, individualities’ evolvement. Even today, they consciously or unconsciously convey the idea of a hierarchical relationship between two antagonistic worlds, which do not deserve to be given a similar interest. 
-						Nomadyca plays with these stereotypes and seeks to go beyond them. It is a project that comes from the East and brings together several artistic disciplines around an audio-visual creation. By combining music, dance and storytelling with digital technology, Nomadyca borrows from local history and culture to create a transcendent, electric and very contemporary universe. The project aims to reflect the aspirations of a new generation that defies boundaries and seeks to give a more loyal view of what an "oriental aesthetic" of today would be.
-				</p>		
-
-			</div>
-			<button id="onursecki-btn" class="onursecki-btn">
-				ELECTRO-ORIENTAL MANIFEST
-			</button>
-		</div>	
-		</div>  
-		
-</div>		
+</div>	
 <div class="section" id="section1">		
 		
 		<div id='nomadyca' class="nomadyca">
@@ -177,43 +211,120 @@
 </div>		
 <div class="section" id="section1">
 		
-<div id="nomadycans" class="nomadycans">
-<div class="nomadycanspanel" data-color="white">
-    <div>
+		
+		
+	
+		<div id="onursecki" class="onursecki clearfix">
+		<div class="onursecki-text-label">
+			<div id="onursecki-text" class="onursecki-text">
+				<p><span class="p-header">ONUR SEÇKİ</span><span class="p-c1"> is an independent music composer who grew up in the eastern lands and moulded his spirit with western influences</span>. 
+				Now as an experienced percussionist, after ending his career in chemical engineering, his musical creations are inspired by his personal journey. 
+				<span class="p-c2">In the manner of a nomad whose walk is guided by the unknown</span>, 
+				he seeks to extract himself from an overly analytical schema in order to tint his productions with a more spiritual meaning. 
+				<span class="p-c3">His musical journey began with a small flick on the skin of the Darbuka</span>, 
+				this oriental percussion instrument recognizable for its traditional sound. 
+				Thanks to his academic training in sound engineering and music production alongside his experience on stage as a percussionist, 
+				the artist has developed several strings to his bow over the years. 
+				His compositions are rich in this diversity and combine ethnic inspirations and electronic music with technique and originality.</p>
+
+			</div>
+			<div id="onursecki-text" class="onursecki-text" style="display:none;">
+				<p>
+					<span class="p-header">Nomadycan Manifesto</span>
+						The terms "Orient" and “Occident" are commonly used to describe two worlds, one in the East and the other in the West. However, these terms cover much more than geographical disparities, they imply differences in culture, way of thinking and development between people. They skew our view of the world and the people who make it up by giving us a fixed reading grid, which obscures the effects of interconnection, of progress, individualities’ evolvement. Even today, they consciously or unconsciously convey the idea of a hierarchical relationship between two antagonistic worlds, which do not deserve to be given a similar interest. 
+						Nomadyca plays with these stereotypes and seeks to go beyond them. It is a project that comes from the East and brings together several artistic disciplines around an audio-visual creation. By combining music, dance and storytelling with digital technology, Nomadyca borrows from local history and culture to create a transcendent, electric and very contemporary universe. The project aims to reflect the aspirations of a new generation that defies boundaries and seeks to give a more loyal view of what an "oriental aesthetic" of today would be.
+				</p>		
+
+			</div>
+			<button id="onursecki-btn" class="onursecki-btn">
+				ELECTRO-ORIENTAL MANIFEST
+			</button>
+		</div>	
+		</div>  
+		
+</div>		
+	
+
+		
+
+<div >
+<span id="stickyw">
 	<img  src="media/nomadycans.png" class="img-responsive" />
-    <img  src="media/nomadycans2.png" class="img-responsive" />
-  </div>
-</div>
-<div class="nomadycanspanel" data-color="violet">
-  <h2>Violet panel</h2>
+	<div id="sticky">
+	<img  src="media/nomadycans2.png" class="img-responsive" />
+	</div>
+</span>
+<span id="stickym">
+	<div id="sticky">
+	<img  src="media/nomadycans3.png" class="img-responsive" />
+	</div>
+</span>
+
+
+<div class="nomadycanspanel" data-color="blue">
+  <h2>Nomadycan 1</h2>
 </div>
 <div class="nomadycanspanel" data-color="indigo">
-  <h2>Indigo panel</h2>
+  <h2>Nomadycan 2</h2>
 </div>
 <div class="nomadycanspanel" data-color="blue">
-  <h2>Blue panel</h2>
+  <h2>Nomadycan 3</h2>
 </div>
 <div class="nomadycanspanel" data-color="green">
-  <h2>Green panel</h2>
+  <h2>Nomadycan 4</h2>
 </div>
 <div class="nomadycanspanel" data-color="yellow">
-  <h2>Yellow panel</h2>
+  <h2>Nomadycan 5</h2>
 </div>
 <div class="nomadycanspanel" data-color="orange">
-  <h2>Orange panel</h2>
+  <h2>Nomadycan 6</h2>
 </div>
 <div class="nomadycanspanel" data-color="red">
-  <h2>Red panel</h2>
+  <h2>Nomadycan 7</h2>
 </div>
 </div>
 
-</div>		
 <div class="section" id="section1">
-	
 		<div id="footer" class="footer">
 			info@nomadyca.co
 		</div>
-</div>			
+</div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script> 
+
+<script type="text/javascript">
+$(window).scroll(function() {
+  
+  // selectors
+  var $window = $(window),
+      $body = $('body'),
+      $nomadycanspanel = $('.nomadycanspanel');
+  
+  // Change 33% earlier than scroll position so colour is there when you arrive.
+  var scroll = $window.scrollTop() + ($window.height() / 3);
+ 
+  $nomadycanspanel.each(function () {
+    var $this = $(this);
+    
+    // if position is within range of this panel.
+    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+    // Remember we set the scroll to 33% earlier in scroll var.
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+          
+      // Remove all classes on body with color-
+      $body.removeClass(function (index, css) {
+        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+      });
+       
+      // Add class of currently active div
+      $body.addClass('color-' + $(this).data('color'));
+    }
+  });    
+  
+}).scroll();
+</script>
+
+		
+			
 </div>		
 
         <!-- javascript libraries -->
@@ -412,6 +523,242 @@ checkbox.addEventListener( 'click', function(){
     document.addEventListener( 'click', listener );
   } 
 });
+</script>
+
+<script type = "text/javascript">
+
+  function createTrackItem(index,name,duration){
+    var trackItem = document.createElement('div');
+    trackItem.setAttribute("class", "playlist-track-ctn");
+    trackItem.setAttribute("id", "ptc-"+index);
+    trackItem.setAttribute("data-index", index);
+    document.querySelector(".playlist-ctn").appendChild(trackItem);
+
+    var playBtnItem = document.createElement('div');
+    playBtnItem.setAttribute("class", "playlist-btn-play");
+    playBtnItem.setAttribute("id", "pbp-"+index);
+    document.querySelector("#ptc-"+index).appendChild(playBtnItem);
+
+    var btnImg = document.createElement('i');
+    btnImg.setAttribute("class", "fas fa-play");
+    btnImg.setAttribute("height", "40");
+    btnImg.setAttribute("width", "40");
+    btnImg.setAttribute("id", "p-img-"+index);
+    document.querySelector("#pbp-"+index).appendChild(btnImg);
+
+    var trackInfoItem = document.createElement('div');
+    trackInfoItem.setAttribute("class", "playlist-info-track");
+    trackInfoItem.innerHTML = name
+    document.querySelector("#ptc-"+index).appendChild(trackInfoItem);
+
+    var trackDurationItem = document.createElement('div');
+    trackDurationItem.setAttribute("class", "playlist-duration");
+    trackDurationItem.innerHTML = duration
+    document.querySelector("#ptc-"+index).appendChild(trackDurationItem);
+  }
+
+  var listAudio = [
+    {
+      name:"Artist 1 - audio 1",
+      file:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3",
+      duration:"08:47"
+    },
+    {
+      name:"Artist 2 - audio 2",
+      file:"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+      duration:"05:53"
+    },
+    {
+      name:"Artist 3 - audio 3",
+      file:"media/High-Land-Teaser.mp3",
+      duration:"00:27"
+    }
+  ]
+
+  for (var i = 0; i < listAudio.length; i++) {
+      createTrackItem(i,listAudio[i].name,listAudio[i].duration);
+  }
+  var indexAudio = 0;
+
+  function loadNewTrack(index){
+    var player = document.querySelector('#source-audio')
+    player.src = listAudio[index].file
+    document.querySelector('.title').innerHTML = listAudio[index].name
+    this.currentAudio = document.getElementById("myAudio");
+    this.currentAudio.load()
+    this.toggleAudio()
+    this.updateStylePlaylist(this.indexAudio,index)
+    this.indexAudio = index;
+  }
+
+  var playListItems = document.querySelectorAll(".playlist-track-ctn");
+
+  for (let i = 0; i < playListItems.length; i++){
+    playListItems[i].addEventListener("click", getClickedElement.bind(this));
+  }
+
+  function getClickedElement(event) {
+    for (let i = 0; i < playListItems.length; i++){
+      if(playListItems[i] == event.target){
+        var clickedIndex = event.target.getAttribute("data-index")
+        if (clickedIndex == this.indexAudio ) { // alert('Same audio');
+            this.toggleAudio()
+        }else{
+            loadNewTrack(clickedIndex);
+        }
+      }
+    }
+  }
+
+  document.querySelector('#source-audio').src = listAudio[indexAudio].file
+  document.querySelector('.title').innerHTML = listAudio[indexAudio].name
+
+
+  var currentAudio = document.getElementById("myAudio");
+
+  currentAudio.load()
+  
+  currentAudio.onloadedmetadata = function() {
+        document.getElementsByClassName('duration')[0].innerHTML = this.getMinutes(this.currentAudio.duration)
+  }.bind(this);
+
+  var interval1;
+
+  function toggleAudio() {
+
+    if (this.currentAudio.paused) {
+      document.querySelector('#icon-play').style.display = 'none';
+      document.querySelector('#icon-pause').style.display = 'block';
+      document.querySelector('#ptc-'+this.indexAudio).classList.add("active-track");
+      this.playToPause(this.indexAudio)
+      this.currentAudio.play();
+    }else{
+      document.querySelector('#icon-play').style.display = 'block';
+      document.querySelector('#icon-pause').style.display = 'none';
+      this.pauseToPlay(this.indexAudio)
+      this.currentAudio.pause();
+    }
+  }
+
+  function pauseAudio() {
+    this.currentAudio.pause();
+    clearInterval(interval1);
+  }
+
+  var timer = document.getElementsByClassName('timer')[0]
+
+  var barProgress = document.getElementById("myBar");
+
+
+  var width = 0;
+
+  function onTimeUpdate() {
+    var t = this.currentAudio.currentTime
+    timer.innerHTML = this.getMinutes(t);
+    this.setBarProgress();
+    if (this.currentAudio.ended) {
+      document.querySelector('#icon-play').style.display = 'block';
+      document.querySelector('#icon-pause').style.display = 'none';
+      this.pauseToPlay(this.indexAudio)
+      if (this.indexAudio < listAudio.length-1) {
+          var index = parseInt(this.indexAudio)+1
+          this.loadNewTrack(index)
+      }
+    }
+  }
+
+
+  function setBarProgress(){
+    var progress = (this.currentAudio.currentTime/this.currentAudio.duration)*100;
+    document.getElementById("myBar").style.width = progress + "%";
+  }
+
+
+  function getMinutes(t){
+    var min = parseInt(parseInt(t)/60);
+    var sec = parseInt(t%60);
+    if (sec < 10) {
+      sec = "0"+sec
+    }
+    if (min < 10) {
+      min = "0"+min
+    }
+    return min+":"+sec
+  }
+
+  var progressbar = document.querySelector('#myProgress')
+  progressbar.addEventListener("click", seek.bind(this));
+
+
+  function seek(event) {
+    var percent = event.offsetX / progressbar.offsetWidth;
+    this.currentAudio.currentTime = percent * this.currentAudio.duration;
+    barProgress.style.width = percent*100 + "%";
+  }
+
+  function forward(){
+    this.currentAudio.currentTime = this.currentAudio.currentTime + 5
+    this.setBarProgress();
+  }
+
+  function rewind(){
+    this.currentAudio.currentTime = this.currentAudio.currentTime - 5
+    this.setBarProgress();
+  }
+
+
+  function next(){
+    if (this.indexAudio <listAudio.length-1) {
+        var oldIndex = this.indexAudio
+        this.indexAudio++;
+        updateStylePlaylist(oldIndex,this.indexAudio)
+        this.loadNewTrack(this.indexAudio);
+    }
+  }
+
+  function previous(){
+    if (this.indexAudio>0) {
+        var oldIndex = this.indexAudio
+        this.indexAudio--;
+        updateStylePlaylist(oldIndex,this.indexAudio)
+        this.loadNewTrack(this.indexAudio);
+    }
+  }
+
+  function updateStylePlaylist(oldIndex,newIndex){
+    document.querySelector('#ptc-'+oldIndex).classList.remove("active-track");
+    this.pauseToPlay(oldIndex);
+    document.querySelector('#ptc-'+newIndex).classList.add("active-track");
+    this.playToPause(newIndex)
+  }
+
+  function playToPause(index){
+    var ele = document.querySelector('#p-img-'+index)
+    ele.classList.remove("fa-play");
+    ele.classList.add("fa-pause");
+  }
+
+  function pauseToPlay(index){
+    var ele = document.querySelector('#p-img-'+index)
+    ele.classList.remove("fa-pause");
+    ele.classList.add("fa-play");
+  }
+
+
+  function toggleMute(){
+    var btnMute = document.querySelector('#toggleMute');
+    var volUp = document.querySelector('#icon-vol-up');
+    var volMute = document.querySelector('#icon-vol-mute');
+    if (this.currentAudio.muted == false) {
+       this.currentAudio.muted = true
+       volUp.style.display = "none"
+       volMute.style.display = "block"
+    }else{
+      this.currentAudio.muted = false
+      volMute.style.display = "none"
+      volUp.style.display = "block"
+    }
+  }
 </script>
     </body>
 </html>
