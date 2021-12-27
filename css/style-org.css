@@ -3,7 +3,8 @@ html {
 }
 body{
 	font-family: 'Futuram';
-	background-color:#000;
+	  background-color: #ab67c2;
+  transition: background-color 1s ease;
 }
 @font-face {
     font-family: Futuram;
@@ -161,7 +162,9 @@ nav .links a {
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.section{
+	background-color:#000;
+}
 .box {
   opacity:0;
 }
@@ -186,10 +189,17 @@ nav .links a {
 	background-image: url('../media/saman.png');
 	background-repeat: no-repeat;
 	background-position: bottom right;
-	z-index:10;
+	z-index:100;
 }
 
-
+.logo{
+	z-index:99;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-top: 150px;
+}
 #front
 {
 	display:block;
@@ -203,7 +213,7 @@ nav .links a {
 {
 	display:block;	
 	position:absolute;
-	width:20%;
+	width:18%;
 	left:35%;
 	top:0;
 	z-index:49;
@@ -245,7 +255,7 @@ nav .links a {
 #mid
 {
 	width:45%;
-	right:20%;
+	right:30%;
 	top:0;
 }
 
@@ -367,6 +377,156 @@ nav .links a {
 
 
 
+
+
+
+
+
+.nomadycaplayer{
+	position:fixed;
+	bottom:0;
+	z-index:10000;
+}
+#myProgress {
+  width: 420px;
+   background-color: #d9d9f2; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#myBar {
+  width: 0%;
+  height: 5px;
+  background-color: #ffc266;
+  border-radius: 10px;
+}
+
+.logo {
+  fill: red;
+}
+
+.btn-action{
+  cursor: pointer;
+  padding-top: 10px;
+  width: 30px;
+}
+
+.btn-ctn, .infos-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infos-ctn{
+padding-top: 20px;
+}
+
+.btn-ctn > div {
+ padding: 5px;
+ margin-top: 18px;
+ margin-bottom: 18px;
+}
+
+.infos-ctn > div {
+ margin-bottom: 8px;
+ color: #ffc266;
+}
+
+.first-btn{
+  margin-left: 3px;
+}
+
+.duration{
+  margin-left: 10px;
+}
+
+.title{
+  margin-left: 10px;
+  width: 210px;
+  text-align: center;
+}
+
+.player-ctn{
+  border-radius: 15px;
+  width: 420px;
+  padding: 10px;
+  background-color: #373737;
+  margin:auto;
+  margin-top: 100px;
+}
+
+.playlist-track-ctn{
+  display: flex;
+  background-color: #464646;
+  margin-top: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.playlist-track-ctn:last-child{
+  /*border: 1px solid #ffc266; */
+}
+
+.playlist-track-ctn > div{
+  margin:10px;
+}
+.playlist-info-track{
+  width: 80%;
+}
+.playlist-info-track,.playlist-duration{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #e9cc95;
+  font-size: 14px;
+  pointer-events: none;
+}
+.playlist-ctn{
+   padding-bottom: 20px;
+}
+.active-track{
+  background: #4d4d4d;
+  color: #ffc266 !important;
+  font-weight: bold;
+  
+}
+
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+  color: #ffc266 !important;
+}
+
+
+.playlist-btn-play{
+  pointer-events: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.fas{
+  color: #ffc266;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
 	.onursecki-text-label{
 	left: 5%;
@@ -458,56 +618,70 @@ nav .links a {
 */
 
 
-.nomadycans{
-  color: #000;
-  background-color: #f4f4f4;
-  transition: background-color 1s ease;
-  
-}
+/* panel styles */
 .nomadycanspanel {
   /* min height incase content is higher than window height */
   min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: sans-serif;;
 
-  /* outline: 10px solid hotpink; */
-  /* turn above on to see the edge of nomadycanspanels */
-}
-.nomadycanspanel {
-  /* min height incase content is higher than window height */
-  min-height: 100vh;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: sans-serif;
-  background-color: #ab67c2;
   /* outline: 10px solid hotpink; */
   /* turn above on to see the edge of panels */
 }
+#sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+@media screen and (max-width: 768px) {
+#sticky2{	
+	  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+} 
+	#stickyw{	
+  display: none;
+}
+}
+@media screen and (min-width: 769px) {
+#stickym{	
+  display: none;
+}
+}
+.nomadycanspanelimg{
+	  position: sticky;
+  position: -webkit-sticky;
+}
 /* colours */
 .color-violet {
-  background-color: #ab67c2;
+  background-color: #d981f7;
 }
 .color-indigo {
-  background-color: #4332CF;
+  background-color: #ef6060;
 }
 .color-blue {
-  background-color: #2F8FED;
+  background-color: #2f77b3;
 }
 .color-green {
-  background-color: #4DCF42;
+  background-color: #d981f7;
 }
 .color-yellow {
-  background-color: #FAEB33;
+  background-color: #ef6060;
 }
 .color-orange {
-  background-color: #F19031;
+  background-color: #2f77b3;
 }
 .color-red {
-  background-color: #F2293A;
+  background-color: #d981f7;
 }
 
 
@@ -516,7 +690,7 @@ nav .links a {
 	width:100%;
 	background-color:#000;
 	color:#fff;
-	padding-top: 200px;
+	padding-top: 300px;
 	text-align: center;	
 	font-size: 36px;
 }
